@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "230733480670",
+    "firebase_url": "https://shop-app-c6143.firebaseio.com",
+    "project_id": "shop-app-c6143",
+    "storage_bucket": "shop-app-c6143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230733480670:android:bd0c88916280b8b18af84f",
+        "android_client_info": {
+          "package_name": "com.cotech.shop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230733480670-2g6rd3ha2mvpobvbr5mkk2o7n4bb2b05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cotech.shop_app",
+            "certificate_hash": "d6a07223bed1cf1df93661db27a43bc794676ba5"
+          }
+        },
+        {
+          "client_id": "230733480670-529beshn2o5cb4ptdiucnd1tlc1koppl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbEMsWtPTIvoe3iXrXteZlttsO-TymOM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230733480670-529beshn2o5cb4ptdiucnd1tlc1koppl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
