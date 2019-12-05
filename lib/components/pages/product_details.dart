@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/main.dart';
+import 'package:ecommerce_app/components/pages/home.dart';
 
 class ProductDetails extends StatefulWidget {
   final product_detail_name;
@@ -217,9 +217,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               icon: Icon(Icons.arrow_drop_up),
                               onPressed: () {},
                             ),
-
                             new Text("${widget.product_detail_quantity}"),
-
                             new IconButton(
                               icon: Icon(Icons.arrow_drop_down),
                               onPressed: () {},
@@ -329,7 +327,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
             ],
           ),
-          
+
           Divider(),
 
           new ListTile(
