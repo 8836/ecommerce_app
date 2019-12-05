@@ -1,4 +1,4 @@
-name: shop_app
+name: ecommerce_app
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -14,14 +14,32 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.2.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-    
+  firebase_analytics: ^5.0.6
+  firebase_core: ^0.4.2
+  firebase_auth: ^0.15.0+1
+  cloud_firestore: ^0.12.10+2
+  google_sign_in: ^4.0.14
+  shared_preferences: ^0.5.4+6
+  fluttertoast: ^3.1.3
+  firebase_storage: ^3.0.8
+  image_picker: ^0.5.4
+  cached_network_image: ^1.1.3
+  intl: 0.15.7
+  rxdart: 0.20.0
+  firebase_database: 3.1.0
+
+
+
+
+
 
   carousel_pro: ^1.0.0
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -45,40 +63,46 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/gun1.jpg
-    - images/headphones.jpg
-    - images/phone1.jpg
-    - images/poloshirt.jpg
-    - images/Profile1.jpg
-    - images/profile2.jpg
-    - images/ps4 pad1.jpg
-    - images/sticker1.jpg
-    - images/sticker2.jpg
-    - images/sticker3.jpg
-    - images/sticker5.jpg
-    - images/toy1.jpg
-    - images/toy2.jpg
-    - images/toy3.jpg
-    - images/toy5.jpg
-    - images/products/hills2.jpeg
-    - images/products/blazer1.jpeg
-    - images/products/dress1.jpeg
-    - images/products/blazer2.jpeg
-    - images/products/hills1.jpeg
-    - images/products/skt2.jpeg
-    - images/products/pants2.jpeg
-    - images/products/skt1.jpeg
-    - images/products/shoe1.jpg
-    - images/products/pants1.jpg
-    - images/products/dress2.jpeg
+    - images/google2.png
+    - images/google1.png
     - images/category/accessories.png
     - images/category/dress.png
     - images/category/formal.png
     - images/category/informal.png
-    - images/category/jeans.png
-    - images/category/shoe.png
+    - images/products/hills2.jpeg
+    - images/toy3.jpg
+    - images/back.jpg
+    - images/poloshirt.jpg
+    - images/profile2.jpg
+    - images/Profile1.jpg
+    - images/sticker1 copy.jpg
+    - images/sticker3.jpg
+    - images/toy5.jpg
+    - images/ps4 pad1.jpg
+    - images/headphones.jpg
+    - images/sticker2.jpg
+    - images/phone1.jpg
+    - images/products/hills1.jpeg
+    - images/logo.png
+    - images/logo2.png
+    - images/products/dress2.jpeg
+    - images/netSHOP.png
+    - images/toy2.jpg
+    - images/products/shoe1.jpg
+    - images/products/pants1.jpg
     - images/category/tshirt.png
-
+    - images/products/skt2.jpeg
+    - images/products/dress1.jpeg
+    - images/category/shoe.png
+    - images/products/blazer2.jpeg
+    - images/products/skt1.jpeg
+    - images/gun1.jpg
+    - images/products/pants2.jpeg
+    - images/category/jeans.png
+    - images/products/blazer1.jpeg
+    - images/sticker5.jpg
+    - images/sticker1.jpg
+    - images/toy1.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

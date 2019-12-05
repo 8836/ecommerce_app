@@ -1,4 +1,4 @@
-# shop_app
+# ecommerce_app
 
 A new Flutter application.
 
