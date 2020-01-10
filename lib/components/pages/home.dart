@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/components/Cart_products.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
@@ -17,6 +18,15 @@ final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 bool loading = false;
 
 class _HomePageState extends State<HomePage> {
+  int _selectedPage = 0;
+  final _pageOptions = [
+    HomePage(),
+    Cart_products(),
+    Shopping_cart(),
+    Text('item 4'),
+    Text('item 5'),
+  ];
+
   @override
   Widget build(BuildContext context) {
     Widget image_carousel = new Container(
@@ -209,6 +219,31 @@ class _HomePageState extends State<HomePage> {
           //Grid View
           Flexible(
             child: Products(),
+          ),
+        ],
+      ),
+
+      //------------------------- BOTTOM NAVIGATION BAR ----------------------------
+
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _selectedPage,
+        onTap: (int index) {
+          setState(() {
+            _selectedPage = index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, color: Colors.red,),
+            title: Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle, color: Colors.red,),
+            title: Text('Account'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_basket, color: Colors.red,),
+            title: Text('Orders'),
           ),
         ],
       ),
